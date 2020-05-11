@@ -102,7 +102,7 @@ exports.delete = (req, res) => {
     .then(user => {
         if(!user) {
             return res.status(404).send({
-                message: "User not found with id " + req.params.userId
+                message: "Usuário not found with id " + req.params.userId
             });
         }
         res.send({message: "User deleted successfully!"});
