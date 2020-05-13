@@ -9,7 +9,7 @@ exports.create = (req, res) => {
             message: "User content can not be empty"
         });
     }
-
+    res.send(req.body);
     // Create a User
     const user = new User({
         name: req.body.name, 
